@@ -27,6 +27,8 @@ def number_to_words(n):
         if 100< n < 1000:
             if n1 == 0:
                 return hun.get(n4) + ' ' + tens.get(n5)
+            if 10 < n3 < 20:
+                return hun.get(n4) + ' ' + tensto.get(n3)
             return hun.get(n4)+ ' ' + tens.get(n5) + ' ' + basic.get(n1)
         else:
              return tens.get(n2) + ' ' + basic.get(n1)
